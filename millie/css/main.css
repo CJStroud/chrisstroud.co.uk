@@ -12,8 +12,9 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 16px;
     line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*
@@ -284,4 +285,68 @@ textarea {
     h3 {
         page-break-after: avoid;
     }
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.background-img:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    color: #F5F5F5;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.bigger {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    color: #F5F5F5;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid #F5F5F5;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 50px;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 30px;
 }
