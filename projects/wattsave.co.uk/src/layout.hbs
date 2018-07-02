@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Wattsave</title>
+  <title>Wattsave | {{title}}</title>
   <meta name="description" content="Wattsave">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -27,19 +27,21 @@
   <nav id="nav-overlay" class="overlay">
     <ul class="nav">
       <li class="item">
-        <a class="link" href="/home.html">Products</a>
+        <a class="link" href="./">Our Products</a>
       </li>
       <li class="item">
-        <a class="link" href="/about.html">About Us</a>
+        <a class="link" href="./about.html">About Us</a>
       </li>
       <li class="item">
-        <a class="link" href="/contact.html">Contact Us</a>
+        <a class="link" href="./contact.html">Contact Us</a>
       </li>
 
     </ul>
   </nav>
 
-  <h1>Index 1</h1>
+  {{#block "body"}}
+    <h2>Hello World</h2>
+  {{/block}}
 
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
