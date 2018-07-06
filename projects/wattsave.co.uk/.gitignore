@@ -1,4 +1,3 @@
-public/css/
-public/*.html
-
+css
+*.html
 node_modules

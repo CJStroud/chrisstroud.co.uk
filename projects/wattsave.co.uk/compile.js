@@ -25,9 +25,9 @@ var contactTemplate = handlebars.compile(fs.readFileSync('src/pages/contact.html
 const contact = contactTemplate({title: 'Contact'})
 
 const pages = {
-  'public/index.html': index,
-  'public/about.html': about,
-  'public/contact.html': contact,
+  'index.html': index,
+  'about.html': about,
+  'contact.html': contact
 }
 
 Object.entries(pages).map(([path, template]) => {
