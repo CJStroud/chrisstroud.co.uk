@@ -15,7 +15,8 @@
     "kebab-case": "^1.0.0"
   },
   "scripts": {
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "build": "gulp styles && node compile.js"
   },
   "author": "",
   "license": "ISC"
