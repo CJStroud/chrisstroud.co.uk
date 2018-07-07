@@ -40,12 +40,6 @@ products.forEach(product => {
 })
 
 Object.entries(pages).map(([path, template]) => {
-  const pathParts = path.split('/')
-  const dir = pathParts.length > 1 ? pathParts.slice(0, pathParts.length - 1).join('/') : null
-  if (dir && !fs.existsSync(dir)) {
-    fs.mkdirSync(dir)
-  }
-
   fs.writeFile(path, template, function (err) {
     if (err) {
       const icon = chalk.red(figures.cross)
