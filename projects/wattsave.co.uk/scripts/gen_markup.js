@@ -10,18 +10,18 @@ var products = require('../data/products.json')
 handlebars.registerHelper(layouts(handlebars))
 
 // Register partials
-handlebars.registerPartial('layout', fs.readFileSync('src/layout.hbs', 'utf8'))
+handlebars.registerPartial('layout', fs.readFileSync('./src/layout.hbs', 'utf8'))
 
-var indexTemplate = handlebars.compile(fs.readFileSync('src/pages/index.html', 'utf8'))
+var indexTemplate = handlebars.compile(fs.readFileSync('./src/pages/index.html', 'utf8'))
 const index = indexTemplate({
   title: 'Home',
   products: products
 })
 
-var aboutTemplate = handlebars.compile(fs.readFileSync('src/pages/about.html', 'utf8'))
+var aboutTemplate = handlebars.compile(fs.readFileSync('./src/pages/about.html', 'utf8'))
 const about = aboutTemplate({title: 'About'})
 
-var contactTemplate = handlebars.compile(fs.readFileSync('src/pages/contact.html', 'utf8'))
+var contactTemplate = handlebars.compile(fs.readFileSync('./src/pages/contact.html', 'utf8'))
 const contact = contactTemplate({title: 'Contact'})
 
 const pages = {
@@ -30,7 +30,7 @@ const pages = {
   'contact.html': contact
 }
 
-var productTemplate = handlebars.compile(fs.readFileSync('src/pages/product.html', 'utf8'))
+var productTemplate = handlebars.compile(fs.readFileSync('./src/pages/product.html', 'utf8'))
 
 // Add a page for each product in products.json
 products.forEach(product => {
