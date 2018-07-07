@@ -1,0 +1,37 @@
+[
+  {
+    "name": "LED Track Lighting",
+    "href": "./products/led-track-lighting.html",
+    "img": "./img/led-track-lighting.jpg"
+  },
+  {
+    "name": "LED Chandeliers",
+    "href": "./products/led-chandeliers.html",
+    "img": "./img/led-chandeliers.jpg"
+  },
+  {
+    "name": "LED Wall Lighting",
+    "href": "./products/led-wall-lighting.html",
+    "img": "./img/led-wall-lighting.jpg"
+  },
+  {
+    "name": "LED Emergency Lighting",
+    "href": "./products/led-emergency-lighting.html",
+    "img": "./img/led-emergency-lighting.jpg"
+  },
+  {
+    "name": "LED Church Lighting",
+    "href": "./products/led-church-lighting.html",
+    "img": "./img/led-church-lighting.jpg"
+  },
+  {
+    "name": "Lighting Design Projects",
+    "href": "./products/lighting-design-projects.html",
+    "img": "./img/lighting-design-projects.jpg"
+  },
+  {
+    "name": "Exterior Lighting Projects",
+    "href": "./products/exterior-lighting-projects.html",
+    "img": "./img/exterior-lighting-projects.jpg"
+  }
+]

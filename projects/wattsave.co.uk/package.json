@@ -16,7 +16,7 @@
   },
   "scripts": {
     "watch": "gulp watch",
-    "build": "gulp styles && node compile.js"
+    "build": "gulp styles && node scripts/gen_markup.js"
   },
   "author": "",
   "license": "ISC"

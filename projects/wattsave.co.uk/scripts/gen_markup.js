@@ -1,28 +1,8 @@
 var handlebars = require('handlebars')
 var layouts = require('handlebars-layouts')
 var fs = require('fs')
-const convertToKebabCase = (string) => {
-  return string.replace(/\s+/g, '-').toLowerCase()
-}
 
-var data = [
-  {name: 'LED Track Lighting'},
-  {name: 'LED Chandeliers'},
-  {name: 'LED Wall Lighting'},
-  {name: 'LED Emergency Lighting'},
-  {name: 'LED Church Lighting'},
-  {name: 'LED Design Projects'},
-  {name: 'LED Lighting Projects'}
-]
-
-data = data.map(({name}) => {
-  var slug = convertToKebabCase(name)
-  return {
-    name,
-    href: `./products/${slug}.html`,
-    img: `./img/${slug}.gif`
-  }
-})
+var data = require('../data/products.json')
 
 // Register helpers
 handlebars.registerHelper(layouts(handlebars))
