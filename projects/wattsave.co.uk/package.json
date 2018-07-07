@@ -10,6 +10,8 @@
     "to-snake-case": "^1.0.0"
   },
   "devDependencies": {
+    "chalk": "^2.4.1",
+    "figures": "^2.0.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
     "kebab-case": "^1.0.0"
