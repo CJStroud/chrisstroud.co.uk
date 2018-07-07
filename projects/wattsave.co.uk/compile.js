@@ -1,6 +1,28 @@
 var handlebars = require('handlebars')
 var layouts = require('handlebars-layouts')
 var fs = require('fs')
+const convertToKebabCase = (string) => {
+  return string.replace(/\s+/g, '-').toLowerCase()
+}
+
+var data = [
+  {name: 'LED Track Lighting'},
+  {name: 'LED Chandeliers'},
+  {name: 'LED Wall Lighting'},
+  {name: 'LED Emergency Lighting'},
+  {name: 'LED Church Lighting'},
+  {name: 'LED Design Projects'},
+  {name: 'LED Lighting Projects'}
+]
+
+data = data.map(({name}) => {
+  var slug = convertToKebabCase(name)
+  return {
+    name,
+    href: `./products/${slug}.html`,
+    img: `./img/${slug}.gif`
+  }
+})
 
 // Register helpers
 handlebars.registerHelper(layouts(handlebars))
@@ -11,11 +33,7 @@ handlebars.registerPartial('layout', fs.readFileSync('src/layout.hbs', 'utf8'))
 var indexTemplate = handlebars.compile(fs.readFileSync('src/pages/index.html', 'utf8'))
 const index = indexTemplate({
   title: 'Home',
-  items: [
-    'apple',
-    'orange',
-    'banana'
-  ]
+  items: data
 })
 
 var aboutTemplate = handlebars.compile(fs.readFileSync('src/pages/about.html', 'utf8'))

@@ -1,13 +1,29 @@
 {{#extend "layout"}}
 
   {{#content "body"}}
-  <h2>Welcome Home</h2>
+  <h1 class="heading">Our products</h1>
 
-  <ul>
+  <div class="flex-grid">
+
     {{#items}}
-        <li>{{.}}</li>
+      <div class="col">
+        <a
+            class="product-card"
+            href="{{href}}"
+            class="product-card"
+          >
+            <div
+              class="product-bg"
+              style="background-image: url('{{img}}')"
+            ></div>
+            <h2 class="title">{{name}}</h2>
+          </a>
+        </div>
     {{/items}}
-  </ul>
+
+
+  </div>
+
   {{/content}}
 
 {{/extend}}

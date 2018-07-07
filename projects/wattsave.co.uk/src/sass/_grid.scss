@@ -1,0 +1,22 @@
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col {
+  width: 50%;
+  padding: 10px;
+}
+
+@media (max-width: 620px) {
+  .flex-grid {
+    display: block;
+  }
+
+  .flex-grid .col {
+    width: 100%;
+  }
+}

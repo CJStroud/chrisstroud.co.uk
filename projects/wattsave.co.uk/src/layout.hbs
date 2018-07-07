@@ -8,8 +8,7 @@
   <meta name="description" content="Wattsave">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
 
   <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 </head>
@@ -19,29 +18,39 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
+  <div class="site-wrapper">
 
-  <a id="burger-menu" href="#">
-    <div class="burger"></div>
-  </a>
+    <header>
+      <a id="burger-menu" href="#">
+        <div class="burger"></div>
+      </a>
 
-  <nav id="nav-overlay" class="overlay">
-    <ul class="nav">
-      <li class="item">
-        <a class="link" href="./">Our Products</a>
-      </li>
-      <li class="item">
-        <a class="link" href="./about.html">About Us</a>
-      </li>
-      <li class="item">
-        <a class="link" href="./contact.html">Contact Us</a>
-      </li>
+      <nav id="nav-overlay" class="overlay">
+        <ul class="nav">
+          <li class="item">
+            <a class="link" href="./">Our Products</a>
+          </li>
+          <li class="item">
+            <a class="link" href="./about.html">About Us</a>
+          </li>
+          <li class="item">
+            <a class="link" href="./contact.html">Contact Us</a>
+          </li>
 
-    </ul>
-  </nav>
+        </ul>
+      </nav>
 
-  {{#block "body"}}
-    <h2>Hello World</h2>
-  {{/block}}
+      {{#block "header"}}
+      {{/block}}
+
+    </header>
+
+    <main>
+      {{#block "body"}}
+      {{/block}}
+    </main>
+
+  </div>
 
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
